@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Break Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="coman-menu.css">
+</head>
+<body>
+    <style>
+        .icecreams{
+    background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(images/coffee.jpeg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+    </style>
+    <!-- header section starts  -->
+
+<header>
+    <div class="header-1">
+        <a href="#" class="logo">
+            <img src="images/ngp-logo.png" alt="" height="90px" width="90px">
+             <p>Dr. N.G.P ARTS AND SCIENCE COLLEGE<br>
+               Autonomous|Affiliated to Bharathiyar University, Coimbatore. <br>
+               Graded 'A++' by NAAC(Third cycle)|Ranked 88th By NIRF.	
+            </p> 
+        </a>
+    </div>
+
+    <div class="header-2">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>The Break Zone</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="photos.html">Gallery</a>
+            <a href="main-menu.html">Menu</a>
+            <a href="availability.html">Availability</a>
+            <a href="staff-signup.html">staff</a>
+            <a href="stud-signup-form.html">Student</a>
+            <a href="event-signup.html">Event</a>
+        </nav>
+
+        <div class="icons">
+            <a href="login-index.html" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+</header> 
+
+<section class="icecreams" id="icecreams">
+
+    <h1 class="heading"> Hot <span>Drinks</span> </h1>
+    
+    <div class="box-container">
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/lemon tea.jpeg" alt="">
+            <div class="description">
+                <h3>Lemon Tea</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/tea.jpeg" alt="">
+            <div class="description">
+                <h3>Tea</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/black tea.jpeg" alt="">
+            <div class="description">
+                <h3>Black Tea</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/coffee.jpeg" alt="">
+            <div class="description">
+                <h3>Coffee</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/green tea.jpg" alt="">
+            <div class="description">
+                <h3>Green Tea</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/hotdrinks1.jpg" alt="">
+            <div class="description">
+                <h3>Special Coffee</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div>
+    
+        <!-- <div class="box" data-aos="fade-up">
+            <img src="images/lemon tea.jpeg" alt="">
+            <div class="description">
+                <h3>choc museli</h3>
+                <span>Rs. 20</span>
+            </div>
+        </div> -->
+
+
+
+    
+        <div class="box" data-aos="fade-up">
+            <img src="images/honey tea.jpg" alt="">
+            <div class="description">
+                <h3>Honey Tea</h3>
+                <span>Rs. 25</span>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+
+<!-- gallery section ends -->
+
+<footer>
+    <div class="footer">
+        <h2 class="credit"> created by <span> Dr. N.G.P Student </span> | all rights reserved! </h2>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+
+
+<script>
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+    let header = document.querySelector('.header-2');
+    
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    });
+    
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    
+        if(window.scrollY > 150){
+            header.classList.add('active');
+        }else{
+            header.classList.remove('active');
+        }
+    
+    }</script>
+
+<script>
+
+    AOS.init({
+        delay:600,
+        duration:10000
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>ADD COOLDRINKS</title>
+<link rel="stylesheet" href="addmenustyle.css">
+</head>
+<body>
+  <style>
+    *{
+   font-family: 'Nunito', sans-serif;
+   /* margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize; */
+}
+body{
+        background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(images/icecream1.jfif) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+
+h1{
+  color: green;
+}
+  </style>
+<form method="POST" action="conncooldrinks.php">
+  <div class="container">
+    <h1>ADD COOLDRINKS</h1>
+    <p>Please fill in this form to create a New Dish.</p>
+    <hr>
+
+    <input type="text" placeholder="Enter item" name="item" id="item" required>
+
+    
+    <input type="text" placeholder="Enter Price" name="price" id="price" required>
+
+    <input type="Number" placeholder="Quantity" name="quantity" id="quantity" required><br>
+
+    <hr>
+
+    <button type="submit" class="addbtn">ADD</button>
+  </div>
+</form>
+</body>
+</html>

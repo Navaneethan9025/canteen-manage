@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Booking</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+
+		<!-- <div class="container-time">
+				<h2 class="heading">Time Open</h2>
+				<h3 class="heading-days">Monday-Friday</h3>
+
+				<h3 class="heading-days">Saturday and sunday</h3>
+
+				<hr>
+
+				<h4 class="heading-phone">Call Us: (123) 45-45-456</h4>
+		</div> -->
+
+
+	<div class="container">
+
+		<div class="container-form">
+				<form method="POST" action="conndelivery.php" >
+					<h2 class="heading heading-yellow"><span>Staff</span> Food Delivery</h2>
+
+					<div class="form-field">
+						<p>Enter Name</p>
+						<input type="text" name="name" placeholder="Enter Name" required="name">
+					</div>
+					<div class="form-field">
+						<p>Mobile Number</p>
+						<input type="number" name="mobile" placeholder="Mobile Number" required="number">
+					</div>
+					<div class="form-field">
+						<p>Department</p>
+						<select name="department" id="select">
+							<option>--select department--</option>
+							<option value="Information Technology">Information Technology</option>
+							<option value="Computer Science">Computer Science</option>
+							<option value="Computer Application">Computer Application</option>
+							<option value="Data Analytics">Data Analytics</option>
+							<option value="Computer Technology">Computer Technology</option>
+							<option value="BBA">BBA</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<p>Block</p>
+						<select name="block" id="select">
+							<option>--select department--</option>
+							<option value="A block">A block</option>
+							<option value="A1 block">A1 block</option>
+							<option value="B block">B1 block</option>
+							<option value="C block">C block</option>
+							<option value="C1 block">C1 block</option>
+							<option value="D block">D block</option>
+							<option value="D1 block">D1 block</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<p>Date</p>
+						<input type="date" name="date">
+					</div>
+					<div class="form-field">
+						<p>Time</p>
+						<input type="time" name="time">
+					</div>
+					<div class="form-field">
+						<p>Item1</p>
+						<select name="item1" id="item1">
+							<option value="">--Select Item1--</option>
+							<option value="samosa">samosa</option>
+							<option value="Veg puff">Veg puff</option>
+							<option value="Chicken role">Chicken role</option>
+							<option value="Chicken puff">Chicken puff</option>
+							<option value="Blum cake">Blum cake</option>
+							<option value="Brownie">Brownie</option>
+						</select>
+					</div>
+
+					<div class="form-field">
+						<p>Item1 Quanity</p>
+						<input type="number" name="item1qty" placeholder="Enter Quanity">
+					</div>
+
+					<div class="form-field">
+						<p>item2</p>
+						<select name="item2" id="item2">
+							<option value="">--Select Item2--</option>
+							<option value="Tea">Tea</option>
+							<option value="Coffee">Coffee</option>
+							<option value="Boost">Boost</option>
+							<option value="Horlicks">Horlicks</option>
+							<option value="Badam Milk">Badam Milk</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<p>Item2 Quanity</p>
+						<input type="number" name="item2qty" placeholder="Enter Quanity">
+					</div>
+
+					<button class="btn">ORDER</button>
+				</form>
+		</div>
+</div>	
+
+	
+</body>
+</html>
