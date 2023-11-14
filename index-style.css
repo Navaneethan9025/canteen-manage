@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+:root{
+   --green:#27ae60;
+   --black:#000000;
+ }
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+*::selection{
+   background-color: var(--main-color);
+   color:#fff;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--green);
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background:var(--black);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   font-family: sans-serif;
+}
+
+section{
+  padding:1rem 10%;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.header-1 .logo{
+   background:#eee;
+   display: flex;
+   padding:2rem 5%;
+ }
+ 
+ .header-1 p{
+   background:#eee;
+   display: flex;
+   align-items: center;
+   padding:0rem 3%;
+   font-size:large;
+ }
+ .logo{
+   color:var(--black);
+   font-weight: bolder;
+   font-size: 3rem;
+ }
+ 
+ .logo i{
+   padding-right: .5rem;
+   color:var(--green);
+ }
+
+ .header-2{
+   background:#fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:2rem 5%;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   position: relative;
+ }
+ 
+ .header-2.active{
+   position: fixed;
+   top:0; left: 0; right:0;
+   z-index: 10000;
+ }
+ 
+ .header-2 .navbar a{
+   padding:.5rem 1.5rem;
+   font-size: 2rem;
+   border-radius: .5rem;
+   color:var(--black);
+ }
+ 
+ .header-2 .navbar a:hover{
+   background:var(--green);
+   color:#fff;
+ }
+ 
+ .header-2 .icons a{
+   font-size: 3rem;
+   color:var(--black);
+   padding-left: .8rem;
+ }
+ 
+ .header-2 .icons a:hover{
+   color:var(--green);
+ }
+ 
+ #menu-bar{
+   font-size: 3rem;
+   border-radius: .5rem;
+   border:.1rem solid var(--black);
+   padding:.8rem 1.5rem;
+   color:var(--black);
+   cursor: pointer;
+   display: none;
+ }
+
+ .Section_top .content{
+  flex:1 1 40rem;
+  align-items: center;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ .content p{
+  color: rgb(30, 88, 197);
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-weight:bolder;
+  font-family:monospace;
+}
+ /*.content span{
+color: var(--green);
+font-size: 60px;
+letter-spacing: 5px;
+font-weight: bolder;
+} */
+.content a{
+  background:var(--green);
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.content a:hover{
+  background: #3c8fcf;
+  color: #fff;
+}
+
+.footer .credit{
+  padding:2rem 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+ @media(max-width:768px) {
+  
+   #menu-bar{
+     display: initial;
+     padding:.5rem 1rem;
+
+   }
+ 
+   .header-2 .navbar{
+     position: absolute;
+     top:100%; left: 0; right:0;
+     background:var(--black);
+     padding:1rem 2rem;
+     display: none;
+   }
+ 
+   .header-2 .navbar.active{
+     display: initial;
+   }
+ 
+   .header-2 .navbar a{
+     font-size: 6rem;
+     display: block;
+     text-align: center;
+     background:#fff;
+     padding:1rem;
+     margin:1.5rem 0;
+   }
+   .content p{
+    font-size: 40px;
+   }
+ }
+
+ @media(max-width:991px){
+  
+   .header-2{
+     padding:2rem;
+   }
+ 
+   section{
+     padding:2rem;
+   }
+
+   .header-1 .logo img{
+    width: 50px;
+    height: 50px;
+   }
+
+   .header-1 .logo p{
+    font-size: 1rem;
+   }
+
+   .content p{
+    display:flex;
+    font-size: 35px;
+  }
+ 
+  .header-2 .logo{
+    font-size: 2.5rem;
+   }
+
+   .header-2 .logo i{
+    font-size: 2rem;
+     }
+
+    .header-2 .navbar a{
+      font-size: 1.7rem;
+     }
+}
+
+@media(max-width:768px) {
+  
+  #menu-bar{
+    display: inline-flex;
+    padding:.5rem 1rem;
+
+  }
+
+  .header-2 .navbar{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    background:var(--black);
+    padding:1rem 2rem;
+    display: none;
+  }
+
+  .header-2 .navbar.active{
+    display:block;
+  }
+
+  .header-2 .navbar a{
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    background:#fff;
+    padding:1rem;
+    margin:1.5rem 0;
+    background-attachment: fixed;
+  }
+}
+
+ @media(max-width:450px){
+
+   html{
+     font-size: 50%;
+   }
+ 
+   .heading{
+     font-size: 3rem;
+   }
+ 
+   .header-1{
+     flex-flow: column;
+     flex-wrap:wrap;
+   }
+ 
+   .header-1 {
+     width:100%;
+     margin-top: 2rem;
+   }
+ 
+   .logo{
+     font-size: 4rem;
+   }
+
+   #menu-bar{
+     display: initial;
+     padding:.4rem 1rem;
+
+   }
+
+   .header-1 .logo img{
+    width: 50px;
+    height: 50px;
+   }
+
+   .header-1 .logo p{
+    font-size: 1.2rem;
+   }
+
+   .header-2 .logo{
+    font-size: 3rem;
+   }
+
+   .header-2 .logo i{
+    font-size: 3rem;
+     }
+
+    }
+
+    @media(max-width:410px){
+      .content p{
+        display:block;
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width:350) {
+      .content p{
+        font-size: 20px;
+       }
+      
+    }
+
+
+@keyframes change{
+  0%
+  {
+      background-image: url(images/menu1.jpg);
+  }
+  20%
+  {
+      background-image: url(images/menu2.jpg);
+  }
+  40%
+  {
+      background-image: url(images/menu3.jpg);
+  }
+  60%
+  {
+      background-image: url(images/menu4.jpg);
+  }
+  80%
+  {
+      background-image: url(images/product-1.jpg);
+  }
+  100%
+  {
+      background-image: url(images/img2.jpg);
+  }
+}
+
+.Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/menu1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 20s infinite ease-in-out;
+}

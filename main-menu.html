@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main-menu.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+ <style>
+        .gallery{
+    background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(images/dosa.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+</style>
+
+<header>
+    <div class="header-1">
+        <a href="#" class="logo">
+            <img src="images/ngp-logo.png" alt="" height="90px" width="90px">
+             <p>Dr. N.G.P ARTS AND SCIENCE COLLEGE<br>
+               Autonomous|Affiliated to Bharathiyar University, Coimbatore. <br>
+               Graded 'A++' by NAAC(Third cycle)|Ranked 88th By NIRF.	
+            </p> 
+        </a>
+    </div>
+
+    <div class="header-2">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>The Break Zone</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="photos.html">Gallery</a>
+            <a href="main-menu.html">Menu</a>
+            <a href="availability.html">Availability</a>
+            <a href="staff-signup.html">staff</a>
+            <a href="stud-signup-form.html">Student</a>
+            <a href="event-signup.html">Event</a>
+        </nav>
+
+        <div class="icons">
+            <a href="login-index.html" class="fas fa-user-circle"></a>
+            <!-- <a href="login-index.html" class="fa fa-sign-out"></a> -->
+        </div>
+
+    </div>
+</header>
+
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+<!-- <div class="Section_top"> -->
+<h1 class="heading"> Our <span>Menus</span> </h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/breakfast1.jpg" alt="">
+        <a href="breakfast.html"><h3>Breakfast</h3></a>
+    </div>
+    
+    <div class="box" data-aos="fade-up">
+        <img src="images/chicken biryani.jpg" alt="">
+        <a href="lunch.html"><h3>Lunch</h3></a>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/chocolate.jpeg" alt="">
+        <a href="chocolate.html"><h3>Chocolates</h3></a> 
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/cold1.jpg" alt="">
+        <a href="cooldrings.html"><h3>Cooldrinks</h3></a>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/hotdrinks1.jpg" alt="">
+        <a href="hotdrings.html"><h3>Hot Beverages</h3></a>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/cone60.png" alt="">
+        <a href="icecream.html"><h3>Icecreams</h3></a>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/snickers.jpg" alt="">
+        <a href="light-snacks.html"><h3>Lite Snacks</h3></a>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <img src="images/bakery1.jpg" alt="">
+        <a href="bakes.html"><h3>Bakes</h3></a>
+    </div>
+
+    <!-- <div class="box" data-aos="fade-up">
+        <img src="/images/img6.jpg" alt="">
+        <h3>Bakes</h3>
+    </div> -->
+
+</div>
+</div>
+
+</section>
+
+<footer>
+    <div class="footer">
+        <h2 class="credit"> created by <span> Dr. N.G.P Student </span> | all rights reserved! </h2>
+    </div>
+</footer>
+
+<!-- gallery section ends -->
+
+
+<!-- aos js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+
+<!-- initializing aos  -->
+
+<script>
+
+    AOS.init({
+        delay:600,
+        duration:10000
+    })
+
+</script>
+
+<script>
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+    let header = document.querySelector('.header-2');
+    
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    });
+    
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    
+        if(window.scrollY > 150){
+            header.classList.add('active');
+        }else{
+            header.classList.remove('active');
+        }
+    
+    }</script>
+
+</body>
+</html>
